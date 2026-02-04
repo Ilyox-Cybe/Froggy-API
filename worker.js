@@ -133,8 +133,8 @@ export default {
     }
     
     // Route par défaut
-    return new Response("Froggy's Land API 🐸", {
-      headers: { ...corsHeaders, "Content-Type": "text/plain" }
+    return new Response("Froggy's Land API 🐸\n\nRoutes disponibles:\n- GET /emojis\n- POST /update-emojis\n- GET /status\n- POST /update-status", {
+      headers: { ...corsHeaders, "Content-Type": "text/plain; charset=utf-8" }
     });
   }
 };

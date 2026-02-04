@@ -2,11 +2,9 @@ name = "froggy-api"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
-# KV Namespace pour stocker les emojis et le status
 [[kv_namespaces]]
 binding = "EMOJIS_KV"
 id = "29d75be241a14b6f8d2ceeb300990a2a"
 
-# Variables d'environnement (optionnel)
 [vars]
-ENVIRONMENT = "production"
+FROGGY_SECRET = "Froggy"
